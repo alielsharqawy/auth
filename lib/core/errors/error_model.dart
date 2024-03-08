@@ -1,4 +1,4 @@
-import 'package:auth/core/api/end_points.dart';
+import 'package:auth/core/api/end_ponits.dart';
 
 class ErrorModel {
   final int status;

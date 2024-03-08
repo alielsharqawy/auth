@@ -1,11 +1,11 @@
 import 'package:auth/cubit/user_cubit.dart';
 import 'package:auth/cubit/user_state.dart';
 import 'package:auth/screens/profile_screen.dart';
-import 'package:auth/widgets/app_image.dart';
 import 'package:auth/widgets/custom_form_button.dart';
 import 'package:auth/widgets/custom_input_field.dart';
 import 'package:auth/widgets/dont_have_an_account.dart';
 import 'package:auth/widgets/forget_password_widget.dart';
+import 'package:auth/widgets/page_header.dart';
 import 'package:auth/widgets/page_heading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,7 +25,7 @@ class SignInScreen extends StatelessWidget {
                 content: Text("success"),
               ),
             );
-            // context.read<UserCubit>().getUserProfile();
+            context.read<UserCubit>().getUserProfile();
             Navigator.push(
               context,
               MaterialPageRoute(
@@ -45,7 +45,7 @@ class SignInScreen extends StatelessWidget {
             backgroundColor: const Color(0xffEEF1F3),
             body: Column(
               children: [
-                const AppImage(),
+                const PageHeader(),
                 Expanded(
                   child: Container(
                     decoration: const BoxDecoration(
@@ -86,7 +86,7 @@ class SignInScreen extends StatelessWidget {
                                 : CustomFormButton(
                                     innerText: 'Sign In',
                                     onPressed: () {
-                                      context.read<UserCubit>().SignIn();
+                                      context.read<UserCubit>().signIn();
                                     },
                                   ),
                             const SizedBox(height: 18),

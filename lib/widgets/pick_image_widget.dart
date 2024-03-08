@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:auth/cubit/user_cubit.dart';
 import 'package:auth/cubit/user_state.dart';
 import 'package:flutter/material.dart';
