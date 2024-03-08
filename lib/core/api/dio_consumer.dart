@@ -3,7 +3,6 @@ import 'package:auth/core/api/api_interceptors.dart';
 import 'package:auth/core/api/end_points.dart';
 import 'package:auth/core/errors/exceptions.dart';
 import 'package:dio/dio.dart';
-
 import 'package:auth/core/api/api_consumer.dart';
 
 class DioConsumer extends ApiConsumer {
